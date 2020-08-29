@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function validateForm() {
+			var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+            alert("Name must be filled out");
+    		return false;
+  }
+  			var x = document.forms["myForm"]["email"].value;
+            if (x == "") {
+            alert("E-mail must be filled out");
+    		return false;
+  }
+  			var x = document.forms["myForm"]["num"].value;
+            if (x == "") {
+            alert("Phone Number must be filled out");
+    		return false;
+  }
+  			var x = document.forms["myForm"]["gen"].value;
+            if (x == "") {
+            alert("Gender must be filled out");
+    		return false;
+  }
+  			var x = document.forms["myForm"]["col"].value;
+            if (x == "") {
+            alert("College must be filled out");
+    		return false;
+  }
+  			var x = document.forms["myForm"]["html"].value;
+            if (x == "") {
+            alert("Reason must be filled out");
+    		return false;
+  }
+  			var x = document.forms["myForm"]["css"].value;
+            if (x == "") {
+            alert("Reason must be filled out");
+    		return false;
+            }
+            var x = document.forms["myForm"]["js"].value;
+            if (x == "") {
+            alert("Reason must be filled out");
+    		return false;
+            }
+            var x = document.forms["myForm"]["cb"].value;
+            if (x == "") {
+            alert("Tick the check box");
+    		return false;
+            }
+            var x = document.getElementById("myCheck").required;
+		}
+	</script>
+	<title></title>
+	<style>
+		.logo{
+			height: 100px;
+			width: 250x;
+		}
+		.rdip{
+			float: right;
+			font-size: 40px;
+		}
+		.navigate{
+			height: 50px;
+			margin-top: 40px;
+			background-color: black;
+			color: white;
+		}
+		.nav{
+			font-size: 20px;
+			padding: 20px;
+			padding-top: 20px;
+			position: relative;
+			top: 14px;
+			text-decoration-line: none;
+			color: white;
+
+		}
+		.ques{
+			text-align: center;
+			margin-right: 60px;
+			margin-top: 20px;
+
+		}
+		.ans{
+			margin-left: 60px;
+			margin-top: 20px;
+		}
+		.formm{
+			margin-top: 30px;
+		}
+		form{
+			font-size: 20px;
+		}
+		label{
+			width: 240px;
+			display: inline-block;
+			text-align: center;
+			margin-top: 16px;
+		}
+		input{
+			border-radius: 4px;
+			background-color: #8080800f;
+			display: inline-block;
+			text-align: center;
+			float: 5px;
+			border: none;
+			border: 1px solid #ccc;
+		}
+		
+	</style>
+</head>
+<body>
+	<div>
+		<a href="https://www.iiit.ac.in/"><img class="logo" src="https://www.iiit.ac.in/img/iiit-new.png"></a>		
+		<a class="rdip" href="https://serc.iiit.ac.in/rdip/"><b>RDIP</b></a>
+		</div>
+	<div class="navigate">
+		<a class="nav" href="homepage.html">Home</a>
+		<a class="nav" href="registration.html">Registration Form</a>
+	</div>
+	<div class="formm">
+		<b>
+		<form action="details.html" name="myForm" onsubmit="return validateForm()" method="GET">
+			<label class="q">First name:</label>
+			<input type="text" name="fname"><br>
+			<label class="q">E-mail:</label>
+			<input type="text" name="email"><br>
+			<label>Phone number:</label>
+			<input type="number" name="num"><br>
+			<label>Gender:</label>
+			<input type="radio" name="gen">Male
+			<input type="radio" name="gen">Female
+			<input type="radio" name="gen">Other<br>
+			<label>Reason for RDIP:</label>
+			<input type="checkbox" name="html" required>HTML
+			<input type="checkbox" name="css" required>CSS
+			<input type="checkbox" name="js" required>JavaScript<br>
+			<label>College:</label>
+			<input type="text" name="col"><br>
+			<label><input type="checkbox" name="cb" required></label>
+			<span class="dec" type = "input">I declare my above details given by me are true.</span><br>
+			<label><input type="submit" name=""></label>
+			<input type="reset" name="">
+		</form>
+	</b>
+	</div>
+</body>
+</html>
